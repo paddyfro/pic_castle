@@ -12,6 +12,7 @@ class App extends Component {
         </div>
         <p className="App-intro">
             Castle image here!
+            this is more text im adding to test updating it
          </p>
       </div>
     );
