@@ -1,22 +1,32 @@
 {
   "name": "pic_castle",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "homepage": "http://paddyfro.github.io/pic_castle",
+  "scripts": {
+    "start": "node node_modules/react-360/scripts/packager.js",
+    "bundle": "node node_modules/react-360/scripts/bundle.js",
+    "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
+    "devtools": "react-devtools",
+    "test": "jest"
+  },
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "16.3.2",
+    "react-native": "~0.55.4",
+    "three": "^0.87.0",
+    "react-360": "~1.1.0",
+    "react-360-web": "~1.1.0"
   },
   "devDependencies": {
-    "gh-pages": "^1.0.0",
-    "react-scripts": "1.0.7"
+    "babel-jest": "^19.0.0",
+    "babel-preset-react-native": "^1.9.1",
+    "gh-pages": "^2.2.0",
+    "jest": "^19.0.2",
+    "react-devtools": "^2.5.2",
+    "react-test-renderer": "16.0.0",
+    "xopen": "1.0.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+  "jest": {
+    "preset": "react-360"
   }
 }
